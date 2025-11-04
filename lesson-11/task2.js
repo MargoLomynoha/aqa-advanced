@@ -3,7 +3,7 @@ function fetchToDo() {
         .then((response) => response.json())
         .catch((error1) => {
             console.log('Fetch to do error: ', error1.message);
-        })
+        });
 }
 
 function fetchUser() {
@@ -11,7 +11,7 @@ function fetchUser() {
         .then((response) => response.json())
         .catch((error2) => {
             console.log('Fetch user error: ', error2.message);
-        })
+        });
 }
 
 Promise.all([fetchToDo(), fetchUser()])
@@ -31,4 +31,3 @@ Promise.race([fetchToDo(), fetchUser()])
     .catch((error) => {
         console.error('Promise race error:', error.message);
     });
-

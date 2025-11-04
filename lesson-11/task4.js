@@ -20,7 +20,7 @@ class UserRequest {
     }
 }
 
-const toDoRequest = new ToDoRequest;
-const userRequest = new UserRequest;
+const toDoRequest = new ToDoRequest();
+const userRequest = new UserRequest();
 
 console.log(await toDoRequest.toDo(), await userRequest.user());
