@@ -11,7 +11,7 @@ console.log(`First rectangle area is ${result1}`);
 
 const rectangleArea2 = function (width, height) {
     return width * height;
-}
+};
 console.log(`Second rectangle area is ${rectangleArea2(5, 10)}`);
 
 // Arrow function

@@ -6,7 +6,7 @@ import chalk from 'chalk';
 // log(chalk.hex('#DEADED').bold('Bold gray!'));
 
 const error = chalk.bold.red;
-const warning = chalk.hex('#FFA500'); 
+const warning = chalk.hex('#FFA500');
 
 console.log(error('Error!'));
 console.log(warning('Warning!'));

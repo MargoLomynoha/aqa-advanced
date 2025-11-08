@@ -1,4 +1,4 @@
-const row = 'Margo'; 
+const row = 'Margo';
 const numberValue = 9;
 const booleanValue = true;
 const nullValue = null;

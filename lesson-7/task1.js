@@ -1,9 +1,8 @@
 function handleNum(number, handEvenCb, handOddCb) {
     if (number % 2 === 0) {
-        handEven();
-    }
-    else {
-        handOdd();
+        handEvenCb();
+    } else {
+        handOddCb();
     }
 }
 

@@ -3,10 +3,10 @@ const users = [
     { email: 'ivanov@gmail.com' },
     {},
     { name: 'Maria' },
-]
+];
 for (const { name, age, email } of users) {
     console.log(`${name ?? '_'}, ${age ?? '_'}, ${email ?? '_'}`);
-};
+}
 
 // Другий варіант де окремо 2 і 3 пункт, цикл for ... of і декструктуризація цикла поокремо.
 
