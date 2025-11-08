@@ -1,21 +1,17 @@
-
 // First way
 
-const isAdult = (age) => age >= 18 ? 'true' : 'false';
+const isAdult = (age) => (age >= 18 ? 'true' : 'false');
 console.log(isAdult(25));
 console.log(isAdult(15));
 
 // Second way
 
 function isAdultIf(age) {
-    if (age >= 18)
-        return true;
-    else
-        return false;
+    if (age >= 18) return true;
+    else return false;
 }
 console.log(isAdultIf(25));
 console.log(isAdultIf(15));
-
 
 // декілька способів перевірки віку
 

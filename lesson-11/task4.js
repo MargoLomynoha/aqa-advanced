@@ -1,7 +1,9 @@
 class ToDoRequest {
     async toDo() {
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+            const response = await fetch(
+                'https://jsonplaceholder.typicode.com/todos/1'
+            );
             return await response.json();
         } catch (error) {
             console.log('Fetch to do error: ', error.message);
@@ -12,7 +14,9 @@ class ToDoRequest {
 class UserRequest {
     async user() {
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+            const response = await fetch(
+                'https://jsonplaceholder.typicode.com/users/1'
+            );
             return await response.json();
         } catch (error) {
             console.log('Fetch user error: ', error.message);

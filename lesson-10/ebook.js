@@ -1,4 +1,4 @@
-import { Book } from "./book.js";
+import { Book } from './book.js';
 
 export class EBook extends Book {
     constructor(title, author, year, fileFormat) {
@@ -6,7 +6,9 @@ export class EBook extends Book {
         this._fileFormat = fileFormat;
     }
     printInfo() {
-        console.log(`${this.title} was written by ${this.author} in ${this.year} year, file format is ${this.fileFormat}.`)
+        console.log(
+            `${this.title} was written by ${this.author} in ${this.year} year, file format is ${this.fileFormat}.`
+        );
     }
     get fileFormat() {
         return this._fileFormat;
@@ -16,15 +18,14 @@ export class EBook extends Book {
             throw new Error('File format is undefined.');
         }
         if (typeof value != 'string') {
-            throw new Error('File format type is not string.')
+            throw new Error('File format type is not string.');
         }
         if (value.length === 0) {
-            throw new Error('File format is empty.')
+            throw new Error('File format is empty.');
         }
         this._fileFormat = value;
     }
     static newEbook(book, fileFormat) {
-        return new EBook(book.title, book.author, book.year, fileFormat)
+        return new EBook(book.title, book.author, book.year, fileFormat);
     }
 }
-

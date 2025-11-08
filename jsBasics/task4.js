@@ -20,4 +20,3 @@ const cylinderHeight = 8;
 
 const cylinderVolume = piNumber * Math.pow(cylinderRadius, 2) * cylinderHeight;
 console.log(`Cylinder volume is ${cylinderVolume.toFixed(2)}.`);
-

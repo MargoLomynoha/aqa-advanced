@@ -1,5 +1,5 @@
-import { Book } from "./book.js";
-import { EBook } from "./ebook.js";
+import { Book } from './book.js';
+import { EBook } from './ebook.js';
 
 console.log('\nПункт 1\n');
 
@@ -22,32 +22,28 @@ console.log('\nПункт 3\n');
 
 try {
     book1.title = undefined;
-}
-catch (error) {
+} catch (error) {
     console.log(error.message);
 }
 
 try {
     book1.author = 5;
-}
-catch (error) {
+} catch (error) {
     console.log(error.message);
 }
 try {
     book1.year = 2027;
-}
-catch (error) {
+} catch (error) {
     console.log(error.message);
 }
 try {
     eBook1.fileFormat = '';
-}
-catch (error) {
+} catch (error) {
     console.log(error.message);
 }
 
 book1.title = 'New Harry Potter 3';
-console.log(book1)
+console.log(book1);
 
 console.log('\nПункт 4\n');
 
