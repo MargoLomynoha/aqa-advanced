@@ -9,4 +9,13 @@ export default defineConfig([
         extends: ['js/recommended'],
         languageOptions: { globals: globals.node },
     },
+    {
+        files: ['**/*.test.{js,mjs,cjs}', '**/*.spec.{js,mjs,cjs}'],
+        languageOptions: {
+            globals: {
+                ...globals.node,
+                ...globals.jest,
+            },
+        },
+    },
 ]);
